@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:fontFamily="@font/almarai_light"
+        android:paddingRight="5dp"
+        android:scrollbarSize="50dp"
+        android:text="مرحبًا"
+        android:textColor="#B83737"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/lamp2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:layout_editor_absoluteX="62dp" />
+
+    <ImageView
+        android:id="@+id/lamp3"
+        android:layout_width="74dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/led3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635"
+        app:srcCompat="@drawable/lamp_of" />
+
+    <ImageView
+        android:id="@+id/lamp2"
+        android:layout_width="74dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/led3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635"
+        app:srcCompat="@drawable/lamp_of" />
+
+
+    <ImageView
+        android:id="@+id/lamp1"
+        android:layout_width="74dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/led1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635"
+        app:srcCompat="@drawable/lamp_of" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="262dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/mainled"
+        android:onClick="onClickLamp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@drawable/lamp_of" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="358dp"
+        android:fontFamily="@font/almarai_light"
+        android:onClick="onBtnClick"
+        android:visibility="invisible"
+        android:text="اعاده"
+        android:textColor="#FFEB3B"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
